@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <!--视口-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        document.querySelector("html").style.fontSize = window.screen.width / 10 + "px";
+        // 为了测试方便 
+        window.onresize = function () {
+            document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+        }
+    </script>
+    <title>乐乎webAPP</title>
+    <!--导入swiper的css-->
+    <link rel="stylesheet" href="./swiper/swiper.min.css" />
+    <!--导入自己的css-->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="swiper-container main">
+        <!--所用的内容的外层容器-->
+        <div class="swiper-wrapper main-content">
+            <!--首页 B-->
+            <div class="swiper-slide indexA-swiper">
+                <!--首页的swiper  1.0-->
+                <div class="swiper-container slideA-swiper">
+                    <!--首页的分页器-->
+                    <div class="swiper-pagination slideA-pagination"></div>
+                    <!--首页的主要内容-->
+                    <div class="swiper-wrapper slideA-wrapper">
+                        <!--首页关注  1.2-->
+                        <div class="swiper-slide slideA-attention">
+                            <div class="swiper-container attention-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slideA-attention-slide">
+                                        <!--每一个项目内容-->
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <img src="./images/02.head-icons/lofter_header_icon_ (1007).jpg" alt="">
+                                                <h3>我们都爱看电影<span>3天前</span></h3>
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./images/04.normal/pic_1.jpg" alt="">
+                                            </div>
+                                            <div class="item-bottom">
+                                                <h5 class="name">我是卷毛：</h5>
+                                                <p class="info">我真的是用手画的哦!!!!^_^</p>
+                                                <h5 class="from">
+                                                    <img src="./images/01.app-icons/icon_welfare_product_share_hl.png" alt="">
+                                                    <span>转载自</span>
+                                                    <a href="javascript:void(0)">汤化林</a>
+                                                </h5>
+                                                <div class="key-word-box">
+                                                    <div class="key-word">
+                                                        <span>#</span>
+                                                        <span>电影</span>
+                                                        <span>神探夏洛克</span>
+                                                        <span>卷福</span>
+                                                        <span>手绘</span>
+                                                        <span>手绘</span>
+                                                    </div>
+                                                </div>
+                                                <div class="control clearfix">
+                                                    <a href="javascript:void(0)" class="fl"><img src="images/01.app-icons/dashboard_like_off_default.png" alt=""></a>
+                                                    <a href="javascript:void(0)" class="fl"><img src="images/01.app-icons/dashboard_reply_default.png" alt=""></a>
+                                                    <a href="javascript:void(0)" class="fl"><img src="images/01.app-icons/dashboard_reblog_default.png" alt=""></a>
+                                                    <a href="javascript:void(0)" class="fr"><img src="images/01.app-icons/dashboard_more_default.png" alt=""></a>
+                                                </div>
+                                                <p class="hot">热度90</p>
+                                            </div>
+                                        </div>
+                                        <!--感兴趣的人-->
+                                        <div class="interest">
+                                            <h5>你可能感兴趣的人</h5>
+                                            <!--感兴趣的swiper-->
+                                            <div class="swiper-container interest-swiper">
+                                                <div class="swiper-wrapper">
+                                                    <!--感兴趣的swiper的每一页-->
+                                                    <div class="swiper-slide interest-slide">
+                                                        <div class="interest-content">
+                                                            <a class="delete" href="javascript:void(0)"><img src="./images/01.app-icons/comment_delete_hover.png" alt=""></a>
+                                                            <img class="head" src="./images/02.head-icons/lofter_header_icon_ (107).jpg" alt="">
+                                                            <h4>BD-Style</h4>
+                                                            <p>被喜欢999次</p>
+                                                            <div class="interest-imgs clearfix">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (30).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (90).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (58).jpg" alt="">
+                                                            </div>
+                                                            <input type="button" value="关注" class="interest-btn">
+                                                        </div>
+                                                    </div>
+                                                    <!--感兴趣的swiper的每一页-->
+                                                    <div class="swiper-slide interest-slide">
+                                                        <div class="interest-content">
+                                                            <a class="delete" href="javascript:void(0)"><img src="./images/01.app-icons/comment_delete_hover.png" alt=""></a>
+                                                            <img class="head" src="./images/02.head-icons/lofter_header_icon_ (106).jpg" alt="">
+                                                            <h4>BD-Style</h4>
+                                                            <p>被喜欢999次</p>
+                                                            <div class="interest-imgs clearfix">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (171).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (402).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (303).jpg" alt="">
+                                                            </div>
+                                                            <input type="button" value="关注" class="interest-btn">
+                                                        </div>
+                                                    </div>
+                                                    <!--感兴趣的swiper的每一页-->
+                                                    <div class="swiper-slide interest-slide">
+                                                        <div class="interest-content">
+                                                            <a class="delete" href="javascript:void(0)"><img src="./images/01.app-icons/comment_delete_hover.png" alt=""></a>
+                                                            <img class="head" src="./images/02.head-icons/lofter_header_icon_ (186).jpg" alt="">
+                                                            <h4>BD-Style</h4>
+                                                            <p>被喜欢999次</p>
+                                                            <div class="interest-imgs clearfix">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (381).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (462).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (583).jpg" alt="">
+                                                            </div>
+                                                            <input type="button" value="关注" class="interest-btn">
+                                                        </div>
+                                                    </div>
+                                                    <!--感兴趣的swiper的每一页-->
+                                                    <div class="swiper-slide interest-slide">
+                                                        <div class="interest-content">
+                                                            <a class="delete" href="javascript:void(0)"><img src="./images/01.app-icons/comment_delete_hover.png" alt=""></a>
+                                                            <img class="head" src="./images/02.head-icons/lofter_header_icon_ (246).jpg" alt="">
+                                                            <h4>BD-Style</h4>
+                                                            <p>被喜欢999次</p>
+                                                            <div class="interest-imgs clearfix">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (21).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (52).jpg" alt="">
+                                                                <img src="./images/02.head-icons/lofter_header_icon_ (53).jpg" alt="">
+                                                            </div>
+                                                            <input type="button" value="关注" class="interest-btn">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--每一个项目内容-->
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <img src="./images/02.head-icons/lofter_header_icon_ (1007).jpg" alt="">
+                                                <h3>我们都爱看电影<span>3天前</span></h3>
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./images/04.normal/pic_1.jpg" alt="">
+                                            </div>
+                                            <div class="item-bottom">
+                                                <h5 class="name">我是卷毛：</h5>
+                                                <p class="info">我真的是用手画的哦!!!!^_^</p>
+                                                <h5 class="from">
+                                                    <img src="./images/01.app-icons/icon_welfare_product_share_hl.png" alt="">
+                                                    <span>转载自</span>
+                                                    <a href="javascript:void(0)">汤化林</a>
+                                                </h5>
+                                                <div class="key-word-box">
+                                                    <div class="key-word">
+                                                        <span>#</span>
+                                                        <span>电影</span>
+                                                        <span>神探夏洛克</span>
+                                                        <span>卷福</span>
+                                                        <span>手绘</span>
+                                                        <span>手绘</span>
+                                                    </div>
+                                                </div>
+                                                <div class="control clearfix">
+                                                    <a href="javascript:void(0)" class="fl"><img src="images/01.app-icons/dashboard_like_off_default.png" alt=""></a>
+                                                    <a href="javascript:void(0)" class="fl"><img src="images/01.app-icons/dashboard_reply_default.png" alt=""></a>
+                                                    <a href="javascript:void(0)" class="fl"><img src="images/01.app-icons/dashboard_reblog_default.png" alt=""></a>
+                                                    <a href="javascript:void(0)" class="fr"><img src="images/01.app-icons/dashboard_more_default.png" alt=""></a>
+                                                </div>
+                                                <p class="hot">热度90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--首页订阅  1.1-->
+                        <div class="swiper-slide take-slide-content">
+                            <!--订阅区域swiper B-->
+                            <div class="swiper-container take-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <h2>推荐订阅</h2>
+                                        <ul class="take-main">
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (101).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right">
+                                                        <input type="button" value="订阅">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (102).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right">
+                                                        <input type="button" value="订阅">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (103).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right">
+                                                        <input type="button" value="订阅">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (104).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (105).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (106).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (107).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (108).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (109).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1010).jpg" alt=""></a></div>
+                                                <div class="content">
+                                                    <div class="left">
+                                                        <p>Cosplay</p>
+                                                        <p>1234人订阅</p>
+                                                    </div>
+                                                    <div class="right"><input type="button" value="订阅"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="take-bottom">
+                                            <a href="javascript:void(0)">分类查看所有标签</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--滚动条-->
+                                <div class="swiper-scrollbar take-scrollbar"></div>
+                            </div>
+                            <!--订阅区域 E-->
+                        </div>
+                    </div>
+                </div>
+                <!--首页swiper E-->
+            </div>
+            <!-- 首页E  -->
+            <!--发现页B  -->
+            <div class="swiper-slide indexB-swiper">
+                <!-- 顶部搜索框 -->
+                <div class="topBar">
+                    <span class="search"></span>
+                    <input type="text" placeholder="搜索标签、用户、标题">
+                    <a class="add" href="javascript:void(0)"></a>
+                </div>
+                <!-- 发现页的swiper B -->
+                <div class="swiper-container find-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- 发现页的第一个轮播图  -->
+                            <div class="banner">
+                                <div class="swiper-container find-banner-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner1.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner2.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner3.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner4.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner5.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner6.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner7.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner8.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner9.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner10.jpg" alt=""></a></div>
+                                    </div>
+                                    <!-- 分页器 -->
+                                    <div class="swiper-pagination find-pagination"></div>
+                                </div>
+                            </div>
+                            <!-- 达人3D切换  -->
+                            <div class="master">
+                                <div class="swiper-container master-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide master-slide">
+                                            <h4>穿戴</h4>
+                                            <div class="items">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (791).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (792).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (793).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (794).jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide master-slide">
+                                            <h4>穿戴</h4>
+                                            <div class="items">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (721).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (792).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (43).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (294).jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide master-slide">
+                                            <h4>穿戴</h4>
+                                            <div class="items">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (91).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (72).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (67).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (590).jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide master-slide">
+                                            <h4>穿戴</h4>
+                                            <div class="items">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (375).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (188).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (584).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (923).jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide master-slide">
+                                            <h4>穿戴</h4>
+                                            <div class="items">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (991).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (92).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (93).jpg" alt="">
+                                                <img src="images/02.head-icons/lofter_header_icon_ (14).jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 达人推荐区域 -->
+                            <div class="commend">
+                                <h4>达人推荐</h4>
+                                <ul class="items">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img src="images/02.head-icons/lofter_header_icon_ (421).jpg" alt="">
+                                            <p class="usName">达人1</p>
+                                            <p class="info">地球1达人</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img src="images/02.head-icons/lofter_header_icon_ (422).jpg" alt="">
+                                            <p class="usName">达人2</p>
+                                            <p class="info">地球2达人</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img src="images/02.head-icons/lofter_header_icon_ (423).jpg" alt="">
+                                            <p class="usName">达人3</p>
+                                            <p class="info">地球3达人</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img src="images/02.head-icons/lofter_header_icon_ (424).jpg" alt="">
+                                            <p class="usName">达人4</p>
+                                            <p class="info">地球4达人</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img src="images/02.head-icons/lofter_header_icon_ (425).jpg" alt="">
+                                            <p class="usName">达人5</p>
+                                            <p class="info">地球5达人</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <img src="images/02.head-icons/lofter_header_icon_ (426).jpg" alt="">
+                                            <p class="usName">达人6</p>
+                                            <p class="info">地球6达人</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- 更多达人按钮 -->
+                                <div class="move">
+                                    <a class="moveBtn" href="javascript:void(0)"><span>查看更多达人></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 发现页的swiper E  -->
+            </div>
+            <!-- 发现页E  -->
+            <!--消息页 s-->
+            <div class="swiper-slide">
+                <!--消息的swiper-->
+                <div class="swiper-container slideC-swiper">
+                    <!--消息的分页器-->
+                    <div class="swiper-pagination slideC-pagination"></div>
+                    <!--消息的主要内容-->
+                    <div class="swiper-wrapper slideC-wrapper">
+                        <!-- 动态页 -->
+                        <div class="swiper-slide message-trend">
+                            <div class="swiper-container message-trend-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide message-trend-slide">
+                                        <!-- 每一个独立区域 -->
+                                        <div class="section">
+                                            <div class="section-l"><img src="./images/02.head-icons/lofter_header_icon_ (697).jpg" alt="..."></div>
+                                            <div class="section-r">
+                                                <div class="section-title">
+                                                    <h4>猎影人</h4>
+                                                    <p>1小时前</p>
+                                                </div>
+                                                <div class="section-content">
+                                                    <p class="info">小人物的内心世界，你懂。。。</p>
+                                                    <div class="items">
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (888).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (81).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (848).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (288).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (488).jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section">
+                                            <div class="section-l"><img src="./images/02.head-icons/lofter_header_icon_ (697).jpg" alt="..."></div>
+                                            <div class="section-r">
+                                                <div class="section-title">
+                                                    <h4>猎影人</h4>
+                                                    <p>1小时前</p>
+                                                </div>
+                                                <div class="section-content">
+                                                    <p class="info">小人物的内心世界，你懂。。。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section">
+                                            <div class="section-l"><img src="./images/02.head-icons/lofter_header_icon_ (367).jpg" alt="..."></div>
+                                            <div class="section-r">
+                                                <div class="section-title">
+                                                    <h4>一起旅游</h4>
+                                                    <p>1小时前</p>
+                                                </div>
+                                                <div class="section-content">
+                                                    <div class="items">
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (345).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (678).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (14).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (56).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (87).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (456).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (806).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (457).jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section">
+                                            <div class="section-l"><img src="./images/02.head-icons/lofter_header_icon_ (697).jpg" alt="..."></div>
+                                            <div class="section-r">
+                                                <div class="section-title">
+                                                    <h4>猎影人</h4>
+                                                    <p>1小时前</p>
+                                                </div>
+                                                <div class="section-content">
+                                                    <p class="info">小人物的内心世界，你懂。。。</p>
+                                                    <div class="items">
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (888).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (81).jpg" alt="">
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="./images/02.head-icons/lofter_header_icon_ (848).jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 动态页的滚动条 -->
+                                <div class="swiper-scrollbar message-scroll"></div>
+                            </div>
+                        </div>
+                        <!-- 消息页 -->
+                        <div class="swiper-slide message-news">
+                            <div class="swiper-container message-news-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide message-news-slide">
+                                        <!-- 顶部部分 -->
+                                        <div class="topBox">
+                                            <a href="javascript:void(0)" class="section">
+                                                <div class="sec-left"><img src="images/01.app-icons/message_new_fans.png" alt=""></div>
+                                                <div class="sec-right">
+                                                    <div class="txt">新的粉丝</div>
+                                                    <span>></span>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="section">
+                                                <div class="sec-left"><img src="images/01.app-icons/message_fav.png" alt=""></div>
+                                                <div class="sec-right">
+                                                    <div class="txt">喜欢</div>
+                                                    <span>></span>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="section">
+                                                <div class="sec-left"><img src="images/01.app-icons/message_new_notices.png" alt=""></div>
+                                                <div class="sec-right">
+                                                    <div class="txt">评论</div>
+                                                    <span>></span>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="section">
+                                                <div class="sec-left"><img src="images/01.app-icons/message_sys_notices.png" alt=""></div>
+                                                <div class="sec-right">
+                                                    <div class="txt">通知</div>
+                                                    <span>></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- 底部部分 -->
+                                        <div class="bottomBox">
+                                            <div class="title">专题</div>
+                                            <div class="info">
+                                                <a href="javascript:void(0)">
+                                                    <div class="left">
+                                                        <img src="./images/02.head-icons/lofter_header_icon_ (948).jpg" alt="">
+                                                    </div>
+                                                    <div class="right">用礼物雕刻温暖时光</div>
+                                                </a>
+                                            </div>
+                                            <div class="more">
+                                                <a href="javascript:void(0)">查看更多专题</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 聊天页 -->
+                        <div class="swiper-slide message-chat">
+                            <div class="swiper-container message-chat-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide message-chat-slide">
+                                        <a href="javascript:;" class="item">
+                                            <div class="left">
+                                                <img src="./images/02.head-icons/lofter_header_icon_ (877).jpg" alt="">
+                                            </div>
+                                            <div class="right">
+                                                <h4>LOFTER通知 <span>02-17</span></h4>
+                                                <p>欢迎来到LOFTER,希望你的每一次选择都会不虚此行</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--消息页 E-->
+            <!-- 我的页面 B -->
+            <div class="swiper-slide selfPage">
+                <div class="swiper-container self-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide self-slide">
+                            <!-- 顶部盒子 -->
+                            <div class="self-topBox">
+                                <div class="topBax-left"><img src="./images/02.head-icons/lofter_header_icon_ (67).jpg" alt=".."></div>
+                                <div class="topBox-right">
+                                    <h3>我是一条夏天的鱼</h3>
+                                    <p class="uid"><span>ID:</span>woshishui</p>
+                                    <p class="tool">
+                                        <span class="guan">关注<b>6</b></span>
+                                        <span class="live">喜欢<b>1</b></span>
+                                        <span class="fen">粉丝<b>0</b></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 乐乎礼品区域 -->
+                            <div class="self-gift">
+                                <a href="javascript:void(0)" class="giftBox line">
+                                    <div class="l-img"><img src="./images/01.app-icons/chrismas_2.png" alt=""></div>
+                                    <div class="l-info">
+                                        <h4>福利市集</h4>
+                                        <p class="t">+1</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="giftBox">
+                                     <div class="l-img"><img src="./images/01.app-icons/ic_logo_rect.png" alt=""></div>
+                                    <div class="l-info">
+                                        <h4>乐乎印品</h4>
+                                        <p>照片照出来更美啊</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 设置区域 -->
+                            <ul class="self-setting">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="setting-left">
+                                            <img src="./images/01.app-icons/my_uapp_icon.png" alt="..">
+                                        </div>
+                                        <div class="setting-right">个人应用<span>></span></div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="setting-left">
+                                            <img src="./images/01.app-icons/my_photography_icon.png" alt="..">
+                                        </div>
+                                        <div class="setting-right">摄影课堂<span>></span></div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="setting-left">
+                                            <img src="./images/01.app-icons/my_share_icon.png" alt="..">
+                                        </div>
+                                        <div class="setting-right">分享<span>></span></div>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                        <div class="setting-left">
+                                            <img src="./images/01.app-icons/my_setting_icon.png" alt="..">
+                                        </div>
+                                        <div class="setting-right">设置<span>></span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 我的页面 E -->
+        </div>
+        <!--照相机-->
+        <a class="main-camera" href="javascript:void(0)"></a>
+        <!--分页器，也是APP的主导航-->
+        <div class="swiper-pagination main-pagination"></div>
+    </div>
+</body>
+
+</html>
+<!--导入swiper的js-->
+<script src="./swiper/swiper.min.js"></script>
+<!--初始化swiper-->
+<script  src="./js/main.js"></script>

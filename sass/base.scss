@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+// 去除input标签的样式
+input {
+    // 边框
+    border: none; // 轮廓线
+    outline: none;
+}
+
+// 快速浮动
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+// 清除浮动
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
